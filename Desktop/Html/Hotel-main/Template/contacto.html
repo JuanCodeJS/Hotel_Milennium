@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>Productos-Hotel Mileniun plaza</title>
+       <link rel="stylesheet" href="/static/reset.css">
+       <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="box">
+                <h1><img src="/static/Imagenes/logohotel.png" class="img" alt="Logo Hotel Milennium"></h1>
+                <nav>
+                    <ul class="Menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="reservas.html">RESERVAS</a></li>
+                        <li><a href="iniciar_sesion.html">Iniciar sesion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombreapellido">Nombre y apellido</label>
+                <input type="text" id="nombreapellido" class="padre" required>
+                
+                <label for="correoelectronico">Correo electronico</label>
+                <input type="email" id="correoelectronico" class="padre" required
+                placeholder="goku@dominio.com">
+                
+                <label for="telefono">telefono</label>
+                <input type="tel" id="telefono" class="padre" required
+                placeholder="(xxx) xxxx xxxx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="padre" re></textarea>
+
+                <fieldset>
+                    <legend>¿ Como le gustaria que lo contactemos ?</legend>
+
+                        <label for="radio-email"><input type="radio" name="contacto" 
+                        value="email" id="radio-email">Email</label>
+                        
+                        <label for="radio-telefono"><input type="radio" name="contacto" 
+                        value="telefono" id="radio-telefono">Telefono</label>
+                        
+                        <label for="radio-email"><input type="radio" name="contacto" 
+                        value="email" id="radio-email" checked>WhatsApp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿ En cual horario prefiere ser atendido ?</legend>
+                    <select name="" id="">
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>
+                    ¿ Le gustaria recibir novedades del hotel Mileniun plaza ?</label>
+
+                <input type="submit" value="Enviar Formulario" class="enviar">
+
+            </form>
+        </main>
+        <footer>
+            <!-- <img src="Imagenes/fondo dbz.jpg" class="img" alt="Logo barberia koku"> -->
+                <ul class="menu-footer">
+                    <li><a href="contacto.html">CONTACTENOS</a></li>
+                    <li><a href="iniciar_sesion.html">Iniciar sesion</a></li>
+                </ul>
+
+            <p class="copy">Copyright - 2022</p>
+        </footer>
+    </body>
+</html>
